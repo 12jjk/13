@@ -1,0 +1,195 @@
+@import "reset";
+@import "variables";
+@import "placeholders";
+@import "mixins";
+
+header {
+  @include go-flex(row, wrap, space-around, center);
+  max-width: 100%s;
+  margin: 0 auto;
+  background-color:hwb(194 9% 28% / 0.641);
+  margin-bottom: 100px;
+
+  nav {
+    width: 500px;
+
+    ul {
+      @include go-flex(row, wrap, space-between, center);
+    }
+  }
+
+  .burger-icon {
+    @include go-flex(column, nowrap, space-between, center);
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 5px;
+      background-color: black;
+      border-radius: 5px;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around!important;
+  width: 1200px;
+  
+  margin: 0 auto;
+
+  .widget {
+    @include go-flex(column);
+    @include w-h(360px, 360px);
+    border: 1px solid black;
+    transition: all 0.7s linear;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    .bg-image {
+      @include w-h(100%, 180px);
+      // @extend %center-element;
+      padding-top: 30px;
+      padding-left: 40px;
+      background-image: url(../images/image.svg);
+
+      p {
+        color: $secondary-color;
+        font-size: $lg-font-size;
+      }
+    }
+    .big-image {
+      @include w-h(100%, 180px);
+      // @extend %center-element;
+      padding-top: 30px;
+      padding-left: 40px;
+      background-image: url(../images/image1.svg);
+
+      p {
+        color: $secondary-color;
+        font-size: $lg-font-size;
+      }
+    }
+    .bog-image {
+      @include w-h(100%, 180px);
+      // @extend %center-element;
+      padding-top: 30px;
+      padding-left: 40px;
+      background-image: url(../images/image2.svg);
+
+      p {
+        color: $secondary-color;
+        font-size: $lg-font-size;
+      }
+    }
+
+
+    .description {
+      @include w-h(100%, 180px);
+      padding-top: 70px;
+      padding-left: 40px;
+
+      p {
+        color: $primary-color;
+        font-size: $sm-font-size;
+        width: 240px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+main {
+  @include go-flex;
+  div { display: flex;
+    justify-content: space-around;
+  .ma-im {
+@include new-flex;
+gap: 35px;
+  }
+  .im {
+    @include new-flex;
+    gap: 64px;
+  }
+ }
+}
+
+
+.oi{display:flex ;
+  justify-content: space-around;
+  
+
+.ma-im{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+ .im{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 64px;
+  justify-content: space-around;
+}
+
+}
+
+h1 {
+  @extend %style-title
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color:white;
+  font-family: Roboto;
+font-size: 30px;
+font-weight: 700;
+line-height: 23.44px;
+
+
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-56%, -1053%);
+}
+
+.granny {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #243043;
+  width: 100%;
+  height: 201px;
+  padding-top: 62px;
+}
+
+.aunt {
+  color: $primary-color;
+  @extend %footertext ;
+
+}
+
+.gadareuli {
+  color: white;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.06px;
+}
+
+
+
+@import "media";

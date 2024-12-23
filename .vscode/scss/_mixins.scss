@@ -1,0 +1,19 @@
+@mixin go-flex($dir: row, $wrap: nowrap, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin w-h($width, $height) {
+  width: $width;
+  height: $height;
+}
+ 
+@mixin new-flex($dir:column,$wrap:wrap){
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+}
+
